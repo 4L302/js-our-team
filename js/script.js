@@ -23,6 +23,18 @@ Scott    Estrada	Developer	              scott-estrada-developer.jpg
 Barbara  Ramos	    Graphic Designer	      barbara-ramos-graphic-designer.jpg
 */
 
+
+{/* <div class="col">
+    <div class="card">
+        <div class="card-body">
+            <div>Nome</div>
+            <div>Surname</div>
+            <div>Role</div>
+        </div>
+    </div>
+</div> */}
+
+
 //array membri del team
 const team = [
     {
@@ -58,9 +70,29 @@ const team = [
 ];
 
 //stampa in console dell'array di oggetti
-for (let i = 0; i < team.length; i++){
+/* for (let i = 0; i < team.length; i++){
     //console.log(team[i]);
     console.log('Nome: ' + team[i].nome);
     console.log('Surname: ' + team[i].surname);
     console.log('Role: ' + team[i].role);
+} */
+
+//visualizzo i dati delle schede
+const row = document.querySelector('.row');
+let rowHtml = '';
+for (let i = 0; i < team.length; i++) {
+    const member = team[i];
+    const tpl = `
+    <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card">
+            <div class="card-body">
+                <div>${member.nome}</div>
+                <div>${member.surname}</div>
+                <div>${member.role}</div>
+            </div>
+        </div>
+    </div>`;
+    rowHtml += tpl;
 }
+//console.log(rowHtml);
+row.innerHTML = rowHtml
