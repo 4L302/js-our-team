@@ -75,7 +75,7 @@ const team = [
     },
 ];
 
-//stampa in console dell'array di oggetti
+//stampa in console l'array di oggetti
 /* for (let i = 0; i < team.length; i++){
     //console.log(team[i]);
     console.log('Nome: ' + team[i].nome);
