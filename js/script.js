@@ -31,7 +31,7 @@ const team = [
         role: 'Founder & CEO'
     },
     {
-        nome: 'Anglea',
+        nome: 'Angela',
         surname: 'Carol',
         role: 'Chief Editor'
     },
@@ -59,5 +59,8 @@ const team = [
 
 //stampa in console dell'array di oggetti
 for (let i = 0; i < team.length; i++){
-    console.log(team[i]);
+    //console.log(team[i]);
+    console.log('Nome: ' + team[i].nome);
+    console.log('Surname: ' + team[i].surname);
+    console.log('Role: ' + team[i].role);
 }
