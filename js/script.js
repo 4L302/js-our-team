@@ -40,32 +40,38 @@ const team = [
     {
         nome: 'Wayne',
         surname: 'Barnett',
-        role: 'Founder & CEO'
+        role: 'Founder & CEO',
+        image: 'wayne-barnett-founder-console.jpg'
     },
     {
         nome: 'Angela',
         surname: 'Carol',
-        role: 'Chief Editor'
+        role: 'Chief Editor',
+        image: 'angela-caroll-chief-editor.jpg'
     },
     {
         nome: 'Walter',
         surname: 'Gordon',
-        role: 'Office Menager'
+        role: 'Office Menager',
+        image: 'walter-gordon-office-manager.jpg'
     },
     {
         nome: 'Angela',
         surname: 'Lopez',
-        role: 'Social Media Menager'
+        role: 'Social Media Menager',
+        image: 'angela-lopez-social-media-manager.jpg'
     },
     {
         nome: 'Scott',
         surname: 'Estrada',
-        role: 'Developer'
+        role: 'Developer',
+        image: 'scott-estrada-developer.jpg'
     },
     {
         nome: 'Barbara',
         surname: 'Ramos',
-        role: 'Graphic Designer'
+        role: 'Graphic Designer',
+        image: 'barbara-ramos-graphic-designer.jpg'
     },
 ];
 
@@ -83,8 +89,9 @@ let rowHtml = '';
 for (let i = 0; i < team.length; i++) {
     const member = team[i];
     const tpl = `
-    <div class="col-sm-12 col-md-6 col-lg-4">
+    <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
         <div class="card">
+            <img class="card-img-top" src="img/${member.image} alt="${member.nome} ${member.surname}">
             <div class="card-body">
                 <div>${member.nome}</div>
                 <div>${member.surname}</div>
