@@ -91,7 +91,7 @@ for (let i = 0; i < team.length; i++) {
     const tpl = `
     <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
         <div class="card">
-            <img class="card-img-top" src="img/${member.image} alt="${member.nome} ${member.surname}">
+            <img class="card-img-top" src="img/${member.image}" alt="${member.nome} ${member.surname}">
             <div class="card-body">
                 <div>${member.nome}</div>
                 <div>${member.surname}</div>
